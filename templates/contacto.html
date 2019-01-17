@@ -1,0 +1,29 @@
+{% extends '_layout.html' %}
+{% block titulo %} {% endblock titulo %}
+{% block contenido %}
+<div>
+    <form action="{{ url_for('enviado' )}}" method="POST">
+        <p>
+            <label for="nombre">Nombre </label><br>
+            <input type="text" name="nombre" id="" value="" placeholder="Nombre"><br>
+        </p>
+        <p>
+                <label for="apellido">Apellido </label><br>
+                <input type="text" name="apellido" id="" value="" placeholder="Nombre"><br>
+        </p>
+        <p>
+            <label for="email">Email </label><br>
+            <input type="text" name="email" value="" placeholder="email" >
+        </p>
+        <P>
+            <label for="">Comentarios </label><br>
+            <input type="text" name="comentario" value="" placeholder="Comentarios"><br>
+        </P>
+        <p>
+            <label for="">            
+                <input type="submit" value="Enviar">
+            </label>
+        </p>
+    </form>
+</div>
+{% endblock contenido %} 
